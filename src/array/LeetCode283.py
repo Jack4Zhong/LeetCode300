@@ -2,8 +2,7 @@
 
 from typing import List
 
-
-class Solution(object):
+class Solution:
     def moveZeroes(self, nums:List[int]) -> None:
         index = -1 
         
@@ -12,8 +11,6 @@ class Solution(object):
                 index +=1
                 nums[i], nums[index] = nums[index], nums[i]
             
-    
-    
 if __name__ == "__main__":
     lst = [0, 1, 0, 3, 12]
     Solution().moveZeroes(lst)

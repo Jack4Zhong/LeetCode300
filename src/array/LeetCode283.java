@@ -14,18 +14,17 @@ public class LeetCode283 {
 
     // Steps
     // 0 - {0,1,0,3,12}
-    // 1 - {1,1,0,3,12}
-    // 2 - {1,3,0,3,12}
-    // 3 - {1,3,12,3,12}
-    // 4 - {1,3,12,0,0}
+    // 1 - {1,0,0,3,12}
+    // 2 - {1,3,0,0,12}
+    // 3 - {1,3,12,0,0}
+
     
     static class Solution {
         public void moveZeroes(int[] nums) {
             int len = nums.length;
             int index = -1;
 
-            for (int i = 0; i < len; i++) {
-                
+            for (int i = 0; i < len; i++) {                
                 if(nums[i] != 0 ){
                     int temp = nums[++index];
                     nums[index] = nums[i];
