@@ -1,4 +1,4 @@
-package string;
+package com.jack.string;
 
 public class LeetCode125 {
     public static void main(String[] args) {

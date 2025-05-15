@@ -1,0 +1,71 @@
+package com.jack.hashtable;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class LeetCode205 {
+
+    public static void main(String[] args) {
+
+        String s = "paper";
+
+        String t = "title";
+
+        // Solution solution = new Solution();
+        BetterSolution solution = new BetterSolution();
+        boolean res = solution.isIsomorphic(s, t);
+
+        System.out.println(res);
+        
+    }
+
+
+    static class BetterSolution{
+        public boolean isIsomorphic(String s, String t) {
+
+            int[] d1 = new int[256];
+            int[] d2 = new int[256];
+            int n = s.length();
+            for (int i = 0; i < n; ++i) {
+                char a = s.charAt(i), b = t.charAt(i);
+                if (d1[a] != d2[b]) {
+                    return false;
+                }
+                d1[a] = i + 1;
+                d2[b] = i + 1;
+            }
+            return true;
+        }
+    }
+
+    static class Solution{
+        public boolean isIsomorphic(String s, String t) {
+            int sLan = s.length();
+            int tLan = t.length();
+
+            if (sLan != tLan) return false;
+
+            Map<Character, Character> sMap = new HashMap<>();
+            Map<Character, Character> tMap = new HashMap<>();
+            
+            for (int i = 0; i < sLan; i++) {
+                char sc = s.charAt(i);
+                char tc = t.charAt(i);
+
+                if (sMap.containsKey(sc)){
+                    if (sMap.get(sc) != tc) return false;
+                } else {
+                    sMap.put(sc, tc);
+                }
+                
+                if (tMap.containsKey(tc)){
+                    if (tMap.get(tc) != sc) return false;
+                } else {
+                    tMap.put(tc, sc);
+                }
+            }
+
+            return true;
+        }    
+    }
+}

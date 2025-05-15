@@ -1,4 +1,4 @@
-package hashtable;//package hashtable;
+package com.jack.hashtable;//package hashtable;
 
 import java.util.HashSet;
 import java.util.List;

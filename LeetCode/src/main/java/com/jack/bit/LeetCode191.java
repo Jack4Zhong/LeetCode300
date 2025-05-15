@@ -1,4 +1,4 @@
-package bit;
+package com.jack.bit;
 
 public class LeetCode191 {
     public static void main(String[] args) {
