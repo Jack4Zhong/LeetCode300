@@ -18,19 +18,18 @@ public class LeetCode142 {
                 fast = fast.next.next;
                 slow = slow.next;
 
-                if (fast ==slow) break;
+                if (fast ==slow) {
+                    ListNode res = head;
+                    while(res!=slow){
+                        res = res.next;
+                        slow = slow.next;
+                    }
+
+                    return res;
+                }
+         
             }
-
-            if(fast== null || fast.next == null) return null;
-
-            ListNode res = head;
-
-            if (slow != res){
-                slow = slow.next;
-                res = res.next;
-            }
-
-            return res;
+          return null;
         }
     }
 }

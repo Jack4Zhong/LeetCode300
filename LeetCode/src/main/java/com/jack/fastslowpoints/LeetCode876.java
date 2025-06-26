@@ -1,4 +1,6 @@
-package com.jack.linkedlist;
+package com.jack.fastslowpoints;
+
+import com.jack.linkedlist.ListNode;
 
 public class LeetCode876 {
 
