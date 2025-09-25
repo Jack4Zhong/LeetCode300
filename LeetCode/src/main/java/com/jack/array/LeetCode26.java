@@ -19,10 +19,11 @@ public class LeetCode26 {
 
             for (int i = 1; i < len; i++) {
                 if(nums[res] != nums[i]){
-                    nums[++res] = nums[i];
+                    res++;
+                    nums[res] = nums[i];
                 }
             }
-            return res++;
+            return res;
 
         }
     }

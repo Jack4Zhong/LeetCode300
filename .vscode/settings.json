@@ -2,5 +2,6 @@
     "java.project.sourcePaths": [
         "src",
         "LeetCode/src/main/java/com/jack/string"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }

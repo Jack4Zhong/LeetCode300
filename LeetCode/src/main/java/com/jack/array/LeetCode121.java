@@ -19,15 +19,15 @@ public class LeetCode121 {
             int min = prices[0];
 
             for (int i = 1; i < len; i++) {
-                if(prices[i]<min) {
+                if(prices[i]<min){
                     min = prices[i];
                     continue;
                 }
 
                 profit = Math.max(profit, prices[i]-min);
-                
             }
             return profit;
+
         }
     }
 

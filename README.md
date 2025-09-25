@@ -1,6 +1,9 @@
 # LeetCode300
 * AlgoMaster LeetCode 300 (From Medium)
 
+https://algomaster.io/practice/dsa-patterns
+
+
 I used to believe that simply solving more problems would automatically make me better at LeetCode. So, I kept grinding through problems, thinking that quantity alone would lead to mastery.
 
 But despite my growing problem count, my problem-solving skills didn’t grow as much as I’d hoped.
